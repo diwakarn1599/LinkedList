@@ -7,6 +7,8 @@ namespace LinkedList
     class LinkedList
     {
         Node head;
+
+        //method for insert at last
         public void InsertAtLast(int val)
         {
             Node temp = new Node(val);
@@ -25,6 +27,7 @@ namespace LinkedList
              }
 
         }
+        //method to display linkedlist
         public void Display()
         {
             Node temp = this.head;
