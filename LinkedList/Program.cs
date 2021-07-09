@@ -9,9 +9,9 @@ namespace LinkedList
             Console.WriteLine("Welcome to linked list");
             LinkedList list = new LinkedList();
             //Adding Elements to linked list
-            list.InsertAtLast(56);
-            list.InsertAtLast(30);
-            list.InsertAtLast(70);
+            list.InsertBeginning(70);
+            list.InsertBeginning(30);
+            list.InsertBeginning(56);
             list.Display();
         }
     }

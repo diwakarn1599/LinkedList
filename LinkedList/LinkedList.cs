@@ -27,6 +27,21 @@ namespace LinkedList
              }
 
         }
+        public void InsertBeginning(int val)
+        {
+            Node temp = new Node(val);
+            if (head == null)
+            {
+                this.head = temp;
+            }
+            else
+            {
+
+                temp.next = this.head;
+                this.head = temp;
+            }
+
+        }
         //method to display linkedlist
         public void Display()
         {
