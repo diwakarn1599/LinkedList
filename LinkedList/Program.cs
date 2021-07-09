@@ -11,7 +11,13 @@ namespace LinkedList
             //Adding Elements to linked list
             list.InsertBeginning(70);
             list.InsertBeginning(30);
-            list.InsertBeginning(56);
+            list.InsertBeginning(10);
+            list.InsertBeginning(40);
+            //list.InsertBeginning(56);
+            list.Display();
+            Console.WriteLine("\nEnter position where you want to add element");
+            int pos = Convert.ToInt32(Console.ReadLine());
+            list.InsertMiddle(56, pos);
             list.Display();
         }
     }

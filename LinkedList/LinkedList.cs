@@ -42,6 +42,21 @@ namespace LinkedList
             }
 
         }
+        public void InsertMiddle(int val,int pos)
+        {
+            Node addNode = new Node(val);
+            Node temp = this.head;
+            Node prev = null;
+            for(int i = 1; i < pos && temp!=null; i++)
+            {
+                prev = temp;
+                temp = temp.next;
+            }
+            prev.next = addNode;
+            addNode.next = temp;
+
+
+        }
         //method to display linkedlist
         public void Display()
         {
