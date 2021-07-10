@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedList
 {
-    class LinkedList
+    public class UserLinkedList
     {
         Node head;
 
@@ -88,6 +88,30 @@ namespace LinkedList
                 Console.WriteLine("No elements in the linked list");
             }
             
+        }
+
+        public int Search(int val)
+        {
+            Node temp = this.head;
+            int count = 0, FlagsAttribute = 0;
+            while (temp != null)
+            {
+                count++;
+                if (temp.data == val)
+                {
+                    FlagsAttribute = 1;
+                    break;
+                }
+                temp = temp.next;
+            }
+            if (FlagsAttribute == 1)
+            {
+                return count;
+            }
+            else
+            {
+                return 0;
+            }
         }
         //method to display linkedlist
         public void Display()
