@@ -57,6 +57,18 @@ namespace LinkedList
 
 
         }
+        public void DeleteBeginning()
+        {
+            if(this.head != null)
+            {
+                Console.WriteLine("\nAfter Deletion:");
+                this.head = this.head.next;
+            }
+            else
+            {
+                Console.WriteLine("No elements in the linked list");
+            }
+        }
         //method to display linkedlist
         public void Display()
         {
