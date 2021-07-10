@@ -69,6 +69,26 @@ namespace LinkedList
                 Console.WriteLine("No elements in the linked list");
             }
         }
+
+        public void DeleteLast()
+        {
+            if(this.head !=null)
+            {
+                Node temp = this.head;
+
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+                Console.WriteLine("\nAfter deletion:");
+            }
+            else
+            {
+                Console.WriteLine("No elements in the linked list");
+            }
+            
+        }
         //method to display linkedlist
         public void Display()
         {

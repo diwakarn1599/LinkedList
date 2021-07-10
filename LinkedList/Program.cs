@@ -14,7 +14,7 @@ namespace LinkedList
             list.InsertBeginning(10);
             list.InsertBeginning(40);
             list.Display();
-            list.DeleteBeginning();
+            list.DeleteLast();
             list.Display();
         }
     }
