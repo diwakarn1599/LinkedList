@@ -19,16 +19,18 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            int index;
+            //Arrange
+            int actual,expected;
             list.InsertBeginning(70);
             list.InsertBeginning(30);
             list.InsertBeginning(10);
             list.InsertBeginning(40);
-            index = list.Search(30);
-            if (index > 0)
-            {
-                list.InsertMiddle(100, index + 1);
-            }
+            //act
+            list.DeleteMiddle(10);
+            actual = list.Size();
+            expected = 3;
+            //assert
+            Assert.AreEqual(actual, expected);
             
         }
     }

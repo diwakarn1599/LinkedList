@@ -89,6 +89,30 @@ namespace LinkedList
             }
             
         }
+        public void DeleteMiddle(int val)
+        {
+            if (this.head != null)
+            {
+                Node temp = this.head;
+                Node prev = null;
+                while (temp != null)
+                {
+                    if (temp.data == val)
+                    {
+                        prev.next = temp.next;
+                        break;
+                    }
+                    prev = temp;
+                    temp = temp.next;
+                }
+                Console.WriteLine("\nAfter deletion:");
+            }
+            else
+            {
+                Console.WriteLine("No elements in the linked list");
+            }
+
+        }
 
         public int Search(int val)
         {
@@ -130,6 +154,19 @@ namespace LinkedList
                 
                 temp = temp.next;
             }
+        }
+
+        public int Size()
+        {
+            int count = 0;
+            Node temp = this.head;
+            while (temp != null)
+            {
+
+                count++;
+                temp = temp.next;
+            }
+            return count;
         }
     }
 }

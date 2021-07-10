@@ -14,8 +14,11 @@ namespace LinkedList
             //list.InsertBeginning(10);
             //list.InsertBeginning(40);
             //list.Display();
-            //list.DeleteLast();
+            //Console.WriteLine($"\nSize = {list.Size()}");
+            
+            //list.DeleteMiddle(10);
             //list.Display();
+            //Console.WriteLine($"\nSize = {list.Size()}");
         }
     }
 }
