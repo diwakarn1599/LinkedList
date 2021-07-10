@@ -137,6 +137,26 @@ namespace LinkedList
                 return 0;
             }
         }
+
+        public void Sort()
+        {
+            Node i;
+            Node j;
+            int temp;
+            for (i=this.head; i != null; i = i.next)
+            {
+                for ( j = i.next; j != null; j = j.next)
+                {
+                    if (i.data > j.data)
+                    {
+                        temp = i.data;
+                        i.data = j.data;
+                        j.data = temp;
+                    }
+                }
+
+            }
+        }
         //method to display linkedlist
         public void Display()
         {

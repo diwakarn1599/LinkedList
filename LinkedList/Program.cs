@@ -9,16 +9,15 @@ namespace LinkedList
             Console.WriteLine("Welcome to linked list");
             UserLinkedList list = new UserLinkedList();
             //Adding Elements to linked list
-            //list.InsertBeginning(70);
-            //list.InsertBeginning(30);
-            //list.InsertBeginning(10);
-            //list.InsertBeginning(40);
-            //list.Display();
-            //Console.WriteLine($"\nSize = {list.Size()}");
+            list.InsertBeginning(70);
+            list.InsertBeginning(30);
+            list.InsertBeginning(10);
+            list.InsertBeginning(40);
+            list.Display();
+            list.Sort();
+            Console.WriteLine("\nAfter sorting:\n");
+            list.Display();
             
-            //list.DeleteMiddle(10);
-            //list.Display();
-            //Console.WriteLine($"\nSize = {list.Size()}");
         }
     }
 }
